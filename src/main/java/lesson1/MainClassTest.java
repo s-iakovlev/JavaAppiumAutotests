@@ -23,4 +23,15 @@ public class MainClassTest extends MainClass {
         Assert.assertTrue("value " + actual + " less than " + expected, actual > expected);
     }
 
+    // Задание 3
+    @Test
+    public void testGetClassString(){
+        String actual = getClassString();
+
+        if ((actual.contains("hello")) || (actual.contains("Hello")))  {
+            Assert.assertTrue("Test pass",true);
+        } else {
+            Assert.assertTrue("Test failed",false);
+        }
+    }
 }
